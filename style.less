@@ -214,8 +214,66 @@ a, a:hover {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
+	font-size: 14px;
 	a {display: block;}
+	h4 {
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #92A4B5;
+	}
+	.media-svg {
+		display: inline-block;
+	}
+	.twitter {
+		margin-right: 20px;
+	}
 }
+.footer-svg {
+	margin-bottom: 10px;
+}
+.upper-block {
+	display: block;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav {
+		display: none;
+	}
+	.why-content {
+		flex-direction: column;
+		div {
+			width: 100%;
+			margin: 0 0 60px 0;
+		}
+		div:last-child {
+			margin: 0;
+		}
+	}
+	.qright-side.hidden,
+	.qleft-side.hidden,
+	.review.hidden {
+		display: none;
+	}
+	.qleft-side, .qright-side {
+		width: 100%;
+	}
+	.review:first-child {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
