@@ -31,6 +31,12 @@
 			<a href="#">Contacts</a>
 			<button class="get-started button medium">Get Started</button>
 		</div>
+		<div class="burger-menu" onclick="hide(1)">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 	</div>
 	<div class="block h1-block">
 		<div>
@@ -258,10 +264,30 @@
 		</div>
 	</div>
 </div>
+<!-- ============================= SIDE MENU ============================= -->
+<div id="side-menu">
+	<div class="mleft-side" onclick="hide(2)"></div>
+	<div class="mright-side">
+		<a href="#">Features</a><br>
+		<a href="pricing.html">Pricing</a><br>
+		<a href="#">About Us</a><br>
+		<a href="#">Contacts</a><br>
+		<button class="get-started button medium">Get Started</button>
+	</div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	function hide(sumVal) {
+		if (sumVal == 1) {
+			document.getElementById("side-menu").style.width = "100%";
+		} else if (sumVal == 2) {
+			document.getElementById("side-menu").style.width = "0%";
+		}
+	}
+</script>
 </html>
 
 
