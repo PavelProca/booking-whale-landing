@@ -36,6 +36,7 @@ body {
 	flex-direction: column;
 	height: 100vh;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 a, a:hover {
 	text-decoration: none;
@@ -116,6 +117,10 @@ a, a:hover {
 }
 /* ====================== MAIN CONTENT STYLES ====================== */
 .h1-block {
+	margin: 0 -100px 80px -100px;
+    padding: 75px 100px 220px 100px;
+    background: url("images/bg-image.png") no-repeat center;
+    color: #fff;
 	div {
 		max-width: 540px;
 		h1 {
@@ -202,6 +207,13 @@ a, a:hover {
 .qleft-side .button {
 	color: #fff;
 	background: linear-gradient(158.95deg, #F9615E 14.45%, #FF625F 72.89%);
+}
+.qright-side.hidden img{
+	margin-left: 20px;
+}
+.qleft-side.hidden img{
+	float: right;
+	margin-right: 20px;
 }
 /* ====================== CAROUSEL ====================== */
 .carousel-inner {
