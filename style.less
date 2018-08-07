@@ -108,6 +108,15 @@ a, a:hover {
 .nav a {
 	margin-right: 35px;
 }
+.nav a.active:after {
+	display: block;
+	content: " ";
+	width: 50px;
+	height: 2px;
+	position: relative;
+	top: -20px;
+	background: #0D99B7;
+}
 .get-started, .get-started:hover {
 	margin-top: 20px;
 	background: linear-gradient(157.13deg, #F9615E 14.45%, #FF625F 72.89%);
@@ -285,7 +294,35 @@ a, a:hover {
 	display: block;
 	margin-bottom: 20px;
 }
-
+/* ****************************************************************** PRICING ****************************************************************** */
+.pricing-wrapper h2 {
+	text-align: center;
+}
+.pricing-content {
+	display: flex;
+	justify-content: center;
+}
+.per-month {
+	width: 100%;
+	max-width: 250px;
+	background: red;
+}
+.pricing-info {
+	margin-left: 40px;
+	max-width: 445px;
+	.button {
+		color: #fff;
+		background: #FF625F;
+	}
+}
+.faq {
+	display: flex;
+	justify-content: space-between;
+	div:first-child {
+		margin-right: 40px;
+	}
+}
+/* ====================== SMALL SCREENS ====================== */
 @media only screen and (max-width: 768px) {
 	.nav {
 		display: none;
@@ -325,6 +362,7 @@ a, a:hover {
 		}
 	}
 }
+
 
 
 
