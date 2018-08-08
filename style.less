@@ -295,8 +295,9 @@ a, a:hover {
 	margin-bottom: 20px;
 }
 /* ****************************************************************** PRICING ****************************************************************** */
-.pricing-wrapper h2 {
+.pricing-wrapper .caption {
 	text-align: center;
+	margin: 40px 0 60px 0;
 }
 .pricing-content {
 	display: flex;
@@ -305,12 +306,32 @@ a, a:hover {
 .per-month {
 	width: 100%;
 	max-width: 250px;
-	background: red;
+	padding: 20px 20px 0 20px;
+	background: #0D99B7;
+	color: #fff;
+	h2 {
+		font-size: 50px;
+		text-align: center;
+	}
+	.small-text {
+		display: inline-block;
+		max-width: 45px;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: left;
+	}
+	.secondary-text {
+		display: inline-block;
+		margin-bottom: 20px;
+		color: rgba(255, 255, 255, 0.6);
+		a {color: #fff;}
+	}
 }
 .pricing-info {
 	margin-left: 40px;
 	max-width: 445px;
 	.button {
+		margin: 30px 0 10px 0;
 		color: #fff;
 		background: #FF625F;
 	}
@@ -321,6 +342,13 @@ a, a:hover {
 	div:first-child {
 		margin-right: 40px;
 	}
+	.divider {
+		height: 40px;
+	}
+}
+.faq-caption {
+	margin: 100px 0 60px 0;
+	text-align: center;
 }
 /* ====================== SIDE MENU ====================== */
 #side-menu {
