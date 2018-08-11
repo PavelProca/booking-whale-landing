@@ -128,7 +128,7 @@ a, a:hover {
 .h1-block {
 	margin: 0 -100px 80px -100px;
     padding: 75px 100px 220px 100px;
-    background: url("images/bg-image.png") no-repeat center;
+    background: #0D99B7;
     color: #fff;
 	div {
 		max-width: 540px;
@@ -381,9 +381,9 @@ a, a:hover {
 }
 .burger-menu {
 	display: none;
-	margin-top: 25px;
+	margin-top: 8px;
 	width: 35px;
-	height: 40px;
+	height: 30px;
 	span {
 		display: block;
 		width: 100%;
@@ -394,11 +394,32 @@ a, a:hover {
 }
 /* ====================== SMALL SCREENS ====================== */
 @media only screen and (max-width: 768px) {
+	.header {
+		height: 50px;
+		line-height: 50px;
+	}
 	.nav {
 		display: none;
 	}
 	.burger-menu {
 		display: block;
+	}
+	.h1-block {
+		margin-bottom: 40px;
+		padding: 40px 100px;
+		h1 {
+			font-size: 38px;
+			line-height: 55px;
+		}
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.blue-line:after, .why-block h2:after {
+		top: 50px;
+	}
+	.trusted .trusted-content {
+		margin-top: 20px;
 	}
 	.trusted .trusted-side {
 		display: block;
@@ -406,15 +427,25 @@ a, a:hover {
 			margin-bottom: 20px;
 		}
 	}
+	.block {
+		margin-bottom: 40px;
+	}
 	.why-content {
 		flex-direction: column;
 		div {
 			width: 100%;
-			margin: 0 0 60px 0;
+			margin: 0 0 40px 0;
 		}
 		div:last-child {
 			margin: 0;
 		}
+		img {margin-bottom: 20px;}
+	}
+	.why-block h2 {
+		margin-bottom: 40px;
+	}
+	.why-block .button {
+		margin-top: 40px;
 	}
 	.qright-side.hidden,
 	.qleft-side.hidden,
