@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2070px" height="1068px" viewBox="0 0 2070 1068" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 18</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient id="gradient_2_1" x1="95.2996849%" y1="91.5905645%" x2="2.65269897%" y2="9.17169527%">
+            <stop stop-color="#1DC58D" offset="0%"></stop>
+            <stop stop-color="#1DC0B8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="url(#gradient_2_1)" transform="translate(1035.019153, 534.033998) rotate(75.000000) translate(-1035.019153, -534.033998) " x="685.019153" y="-524.466002" width="700" height="2117" rx="350"></rect>
+    </g>
+</svg>
