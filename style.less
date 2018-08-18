@@ -150,8 +150,8 @@ input::placeholder {
 	left: 0;
 	width: 100%;
 	margin-top: 80px;
-    background: #0D99B7;
-    color: #fff;
+	background: #0D99B7;
+	color: #fff;
 	.h1-content {
 		max-width: 540px;
 		h1 {
@@ -280,12 +280,8 @@ input::placeholder {
 	top: -35px;
 	display: block;
 	content: " ";
-	/*
-	width: 640px;
-	height: 790px;
-	*/
 	width: 2070px;
-    height: 1068px;
+	height: 1068px;
 	z-index: -2;
 	background: url("images/green-pill.svg") no-repeat center;
 	background-size: 100%;
@@ -296,50 +292,39 @@ input::placeholder {
 	top: -35px;
 	display: block;
 	content: " ";
-	/*
-	width: 621px;
-	height: 1035px;
-	*/
 	width: 1786px;
 	height: 1611px;
 	z-index: -2;
 	background: url("images/red-pill.svg") no-repeat center;
 	background-size: 100%;	
 }
+.qleft-side.hidden,
+.qright-side.hidden {
+	max-height: 555px;
+}
 /* ====================== CAROUSEL ====================== */
-.carousel-h {
-	text-align: center;
-	margin-bottom: 50px;
-}
-.carousel-inner {
-	padding-bottom: 60px;
-}
-.review-wrapper {
-	display: flex;
-	justify-content: center;
-}
-.review {
-	width: 50%;
-	max-width: 440px;
-	padding: 30px;
-	background: #fff;
-	border-radius: 20px;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-	border: 1px solid grey;
-	font-size: 21px;
-	&:first-child {
-		margin-right: 40px;
+.owl-wrap {
+	padding: 0 77px;
+	h2 {
+		text-align: center;
 	}
 }
-.names {
-	color: #4F7B85;
-	margin-top: 20px;
+.owl-stage {
+	display: flex;
 }
-.carousel-indicators li {
-	background: #C9C9C9;
+.owl-carousel .item {
+	height: 96%;
+	margin: 10px;
 }
-.carousel-indicators .active {
-	background: linear-gradient(175.06deg, #0992E5 0%, #1AB9CB 92.43%);
+.owl-carousel .item {
+	min-height: 302px;
+	padding: 40px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	background: #FFFFFF;
+	.main-text {
+		margin-bottom: 40px;
+	}
 }
 /* ====================== INVESTMENTS ====================== */
 .investment {
@@ -481,6 +466,10 @@ input::placeholder {
 }
 /* ====================== SMALL SCREENS ====================== */
 @media only screen and (max-width: 768px) {
+	h2 {
+		font-size: 30px;
+	}
+	/* ====== HEADER ====== */
 	.header {
 		height: 50px;
 		line-height: 50px;
@@ -491,6 +480,7 @@ input::placeholder {
 	.burger-menu {
 		display: block;
 	}
+	/* ====== MAIN BLOCK ====== */
 	.h1-wrapper {
 		padding: 40px 20px;
 	}
@@ -504,9 +494,7 @@ input::placeholder {
 	.special-divider {
 		height: 400px;
 	}
-	h2 {
-		font-size: 30px;
-	}
+	/* ====== TRUSTED BY ====== */
 	.trusted .trusted-content {
 		margin-top: 20px;
 	}
@@ -519,6 +507,7 @@ input::placeholder {
 	.block {
 		margin-bottom: 40px;
 	}
+	/* ====== WHY BLOCK ====== */
 	.why-content {
 		flex-direction: column;
 		div {
@@ -533,6 +522,11 @@ input::placeholder {
 	.why-block .button {
 		margin-top: 40px;
 	}
+	/* ====== CAROUSEL ====== */
+	.owl-wrap {
+		padding: 0;
+	}
+	/* ====== PILL BLOCKS ====== */
 	.pill-wrap {
 		display: none;
 	}
