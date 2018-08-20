@@ -225,13 +225,14 @@ input::placeholder {
 	content: " ";
 	width: 1786px;
 	height: 1611px;
-	z-index: -2;
+	z-index: -3;
 	background: url("images/grey-pill.svg") no-repeat center;
 	background-size: 100%;
 }
 .question-block {
 	display: flex;
 	justify-content: space-between;
+	min-height: 680px;
 }
 .qleft-side, .qright-side {
 	width: 50%;
@@ -304,7 +305,7 @@ input::placeholder {
 }
 /* ====================== CAROUSEL ====================== */
 .owl-wrap {
-	padding: 100px 77px 0 77px;
+	padding: 0 77px;
 	h2 {
 		text-align: center;
 	}
@@ -449,6 +450,13 @@ input::placeholder {
 	height: 100%;
 	padding: 20px;
 	background: #fff;
+	a {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	.button {
+		margin-top: 0;
+	}
 }
 .burger-menu {
 	display: none;
